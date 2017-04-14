@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.login-logo a, .register-logo a {
+    color: #fff;
+}
+
+.quick-tasks .col-xs-6 .small-box h3 {
+    font-size: 32px;
+}
+
+.timeline > li {
+    height: 35px;
+}
+
+.settings .timeline > li {
+    height: auto;
+}
+
+section.home-schedule .timeline > li i:hover {
+    border: 2px solid black;
+}
+
+.home-schedule .row-horizon.schedule {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.date-lines {
+    left: 0;
+    position: absolute;
+    top: 65px;
+    width: 98%;
+}
+.date-lines .date-line hr {
+    margin-left: -12px;
+    margin-top: 10px;
+    width: 95%;
+}
+.date-lines .date-line .date {
+    color: #888;
+    float: left;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 2px;
+    margin-top: -7px;
+    width: 40px;
+}
+.date-lines .date-line {
+    height: 10px;
+    margin-top: 40px;
+}
+.todo-list .tools .time {
+    font-size: 12px;
+    margin-right: 5px;
+}
+#weigh .info-box-icon img {
+    max-width: 80%; 
+	margin:10px auto; 
+	border: 3px solid;
+}
+#butcher .table td img {
+   max-width: 40px;
+   border: 2px solid;
+}
+
+.pedigree .info-box-text {
+    font-size: 12px;
+}
+.pedigree .info-box-number {
+    font-size: 15px;
+}
+.pedigree .info-box-text .notes {
+    text-transform: none;
+    white-space: normal;
+}
+.pedigree .info-box.buck {
+    margin-bottom: 5px;
+}
+.pedigree .half {
+    height: 50px;
+}
+.pedigree .whole {
+    height: 100px;
+}
+.row.pedigree {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media  (max-width: 480px) {
+	.widget-user .widget-user-header {
+		height: 150px;
+	}
+	.widget-user .widget-user-image {
+		top: 95px;
+	}
+	.widget-user .widget-user-username {
+		font-size: 22px;
+	}
+	.widget-user .box-footer .description-block > .description-header {
+		font-size: 14px;
+	}
+	.widget-user .box-footer .description-block > .description-text {
+		font-size: 12px;
+	}
+	
+}
+ 
+
+.breeder.widget-user-image > img {
+    width: 130px;
+}
+.litter.widget-user-image .img-circle {
+    width: 110px;
+}
+
+
+.breeder.profile-user-img {
+     width: 150px;
+     }
+.litter.profile-user-img {
+     width: 130px;
+     }
+
+.breeder.widget-user-image {
+	 margin-left: -65px;
+	 top: 45px;
+	 z-index: 10;
+     }
+.litter.widget-user-image {
+	margin-left: -110px;
+	top: 55px;
+	z-index: 10;
+     }
+@media only screen and (max-width: 400px) {
+    .litter.widget-user-image {
+        margin-left: -70px;
+    }
+}
+@media  (max-width: 480px) {
+    	.widget-user .widget-user-header {
+        		height: 150px;
+        }
+    }
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+        .litter.widget-user-image {
+            margin-left: -70px;
+        }
+    	.widget-user .widget-user-image {
+         		top: 95px;
+         }
+    }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+        .litter.widget-user-image {
+            margin-left: -70px;
+        }
+    	.widget-user .widget-user-username {
+         		font-size: 22px;
+         	}
+    	.widget-user .box-footer .description-block > .description-header {
+         		font-size: 14px;
+         	}
+    	.widget-user .box-footer .description-block > .description-text {
+         		font-size: 12px;
+         }
+
+    }
+

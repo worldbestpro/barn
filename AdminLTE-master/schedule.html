@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HUTCH</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome 
+    <link rel="stylesheet" href="external/font-awesome.min.css">   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+    <link rel="stylesheet" href="dist/css/skins/skin-green.min.css">
+    <link href="plugins/datepicker/datepicker3.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="plugins/bootstrap-horizon/bootstrap-horizon.css">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+  -->
+  <body class="skin-green sidebar-mini">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="home.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>H</b></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>HUTCH</b></span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav role="navigation" class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a role="button" data-toggle="offcanvas" class="sidebar-toggle" href="#">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+              <!-- Notifications Menu -->
+              
+              <!-- Tasks Menu -->
+              
+              <!-- User Account Menu -->
+              
+              <!-- Control Sidebar Toggle Button -->
+              
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+
+          <!-- Sidebar Menu -->
+          <ul class="sidebar-menu">
+            <!-- Optionally, you can add icons to the links -->
+            <li>
+              <a href="home.html">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="treeview active">
+              <a href="#"><i class="fa fa-venus-mars"></i> <span>Breeders</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu menu-open" style="display: block;">
+                <li><a data-toggle="modal" role="button" href="#new_breeder">Add New</a></li>
+                <li><a href="breeders.html">Does</a></li>
+                <li><a href="breeders.html">Bucks</a></li>
+                <li><a href="#">Archive</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-th"></i> <span>Litters</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#">Add New</a></li>
+                <li><a href="#">Archive</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="pages/schedule.html">
+                <i class="fa fa-calendar"></i> <span>Schedule</span>
+                <small class="label pull-right bg-red">3</small>
+              </a>
+            </li>
+          </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div style="min-height: 528px;" class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>Schedule<small> <a href="#">All</a> | <a href="#">General</a> | <a href="#">Breeders</a> | <a href="#">Litters</a></small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+            <li class="active">Here</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+          <!-- Your Page Content Here -->
+          
+          <div class="row">
+  <section class="col-md-4 connectedSortable ui-sortable">
+  <div class="box box-primary">
+                <div class="box-header ui-sortable-handle" style="cursor: move;">
+                  <i class="ion ion-clipboard"></i>
+                  <h3 class="box-title">Upcoming Tasks</h3>
+                  
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <ul class="todo-list ui-sortable">
+                    <li>
+                      <!-- drag handle -->
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <!-- checkbox -->
+                      <input type="checkbox" value="" name="">
+                      <!-- todo text -->
+                      <span class="text">Weight Litter 103</span>
+                      <!-- Emphasis label -->
+                      <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+                      <!-- General tools such as edit or delete-->
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Breed Sally with Fred</span>
+                      <small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Butcher Litter 101</span>
+                      <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Buffy is Due in 5 days</span>
+                      <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Add doe box to Sara</span>
+                      <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Trim Fred's nails</span>
+                      <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+  <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Butcher Litter 101</span>
+                      <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Buffy is Due in 5 days</span>
+                      <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="handle ui-sortable-handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                      <input type="checkbox" value="" name="">
+                      <span class="text">Add doe box to Sara</span>
+                      <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+                      <div class="tools">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix no-border">
+                  <div class="box-tools pull-left">
+                    <ul class="pagination pagination-sm inline">
+                      <li><a href="#">«</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">»</a></li>
+                    </ul>
+                  </div><button class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add New</button>
+                </div>
+              </div>
+              
+    </section>
+  
+  <section class="col-lg-8 connectedSortable ui-sortable home-schedule">
+  <div style="" class="box box-solid box-primary ">
+                <div style="cursor: move;" class="box-header ui-sortable-handle">
+                  <i class="fa fa-calendar"></i>
+                  <h3 class="box-title">Schedule</h3>
+                  <!-- tools box -->
+                  <!-- /. tools -->
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                
+                
+                <div class="date-lines">
+  <div class="date-line">
+  <span class="date">Today</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  <div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div><div class="date-line">
+  <span class="date">4/15/16</span><hr>
+    </div>
+  
+
+</div>
+                
+                
+  <div class="row row-horizon schedule">
+  <div class="col-xs-3 col-md-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i data-original-title="Breed 3/12/2016" title="" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Palpate 3/26/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Kindle 4/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Weigh/Wean 5/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Weigh 2 6/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Weigh 3 6/26/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Butcher 7/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div><div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img style="max-width: 50px; margin-left:8px;" src="img/rabbit2.jpg" class="img-circle"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+                    <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;" data-original-title="Sara"><img style="max-width: 50px; margin-left:8px;" src="img/rabbit2.jpg" class="img-circle"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue" data-original-title="Breed 3/12/2016"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div><div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img style="max-width: 50px; margin-left:8px;" src="img/rabbit2.jpg" class="img-circle"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow" data-original-title="Breed 3/12/2016"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div><div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img style="max-width: 50px; margin-left:8px;" src="img/rabbit2.jpg" class="img-circle"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i data-original-title="Breed 3/12/2016" title="" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  <div class="col-xs-3 col-sm-1">
+                    <!-- The timeline -->
+                    <ul class="timeline timeline-inverse"><li title="Sara" data-placement="bottom" data-toggle="tooltip" style="margin-bottom:30px;"><img class="img-circle" src="img/rabbit2.jpg" style="max-width: 50px; margin-left:8px;"></li>
+                      
+                      <!-- timeline item -->
+                      
+                        
+                    <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-venus-mars bg-blue"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-check bg-maroon"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-birthday-cake bg-green"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-balance-scale bg-yellow"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      <li>
+                        <i title="Breed 3/12/2016" data-placement="top" data-toggle="tooltip" class="fa fa-cutlery bg-red"></i>
+                        
+                      </li>
+                      <!-- END timeline item -->
+                      
+                    </ul></div>
+  
+  </div>
+                  <!--The calendar -->
+                  
+                </div><!-- /.box-body -->
+                
+  </div></section>
+  
+  
+  </div>
+          
+          
+          
+  <div class="row"><div class="col-md-3 col-sm-6 col-xs-12"><a data-toggle="modal" role="button" href="#new_breeder">
+              <div class="info-box">
+                <span class="info-box-icon bg-gray text-muted"><i class="fa fa-plus"></i></span>
+                <div class="info-box-content text-muted"><h1>Add New</h1>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+              </a>
+            </div></div>
+          
+          
+          <!-- modal -->
+            <div class="modal" id="new_breeder">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">New Breeder</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="inputEmail3">Name</label>
+                      <div class="col-sm-10"><input type="text" placeholder="Enter ..." class="form-control">
+                        
+                      </div>
+                    </div>
+  <div class="form-group">
+                      <label class="col-sm-2 control-label" for="inputEmail3">Cage</label>
+                      <div class="col-sm-4"><input type="text" placeholder="Enter ..." class="form-control">
+                        
+                     </div>
+                 
+                      <label class="col-sm-2 control-label" for="inputEmail3">Tattoo</label>
+                      <div class="col-sm-4"><input type="text" placeholder="Enter ..." class="form-control">
+                        
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="inputPassword3">Father</label>
+                      <div class="col-sm-4">
+                        <select class="form-control">
+                        <option>Sara</option>
+                        <option>Wilma</option>
+                        <option>Queen</option>
+                      </select>
+                      </div>
+                      <label class="col-sm-2 control-label" for="inputPassword3">Mother</label>
+                      <div class="col-sm-4">
+                        <select class="form-control">
+                        <option>Sara</option>
+                        <option>Wilma</option>
+                        <option>Queen</option>
+                      </select>
+                      </div>
+                    </div>
+                    
+<div class="form-group">
+  <label class="col-sm-2 control-label" for="inputEmail3">Color</label>
+                      <div class="col-sm-4"><input type="text" placeholder="Enter ..." class="form-control">
+                        
+                      </div>
+  
+  <label class="col-sm-2 control-label" for="inputEmail3">Aquired</label>
+                      <div class="col-sm-4">
+  <div class="input-group date" id="datepick">
+  <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+</div>
+                      </div>
+  
+                    </div><div class="form-group">
+                      <label class="col-sm-2 control-label" for="exampleInputFile">Photo</label>
+  <div class="col-sm-10">
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">Select photo of litter</p></div>
+                    </div>
+
+<div class="form-group">
+                      <label class="col-sm-2 control-label" for="exampleInputFile">Notes</label>
+  <div class="col-sm-10"><textarea placeholder="Descriptions" rows="3" class="form-control"></textarea></div>
+                    </div>
+
+                  </form>
+              </div>
+                  <div class="modal-footer bg-info">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+          Animal Managment Systems
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2015 <a href="#">BarnTrax</a>.</strong> All rights reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+          <li class="active"><a data-toggle="tab" href="#control-sidebar-home-tab"><i class="fa fa-home"></i></a></li>
+          <li><a data-toggle="tab" href="#control-sidebar-settings-tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Home tab content -->
+          <div id="control-sidebar-home-tab" class="tab-pane active">
+            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                    <p>Will be 23 on April 24th</p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Custom Template Design
+                    <span class="label label-danger pull-right">70%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div style="width: 70%" class="progress-bar progress-bar-danger"></div>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+          </div><!-- /.tab-pane -->
+          <!-- Stats tab content -->
+          <div id="control-sidebar-stats-tab" class="tab-pane">Stats Tab Content</div><!-- /.tab-pane -->
+          <!-- Settings tab content -->
+          <div id="control-sidebar-settings-tab" class="tab-pane">
+            <form method="post">
+              <h3 class="control-sidebar-heading">General Settings</h3>
+              <div class="form-group">
+                <label class="control-sidebar-subheading">
+                  Report panel usage
+                  <input type="checkbox" checked="" class="pull-right">
+                </label>
+                <p>
+                  Some information about this general settings option
+                </p>
+              </div><!-- /.form-group -->
+            </form>
+          </div><!-- /.tab-pane -->
+        </div>
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+    </div><!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    
+    <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script>
+        $('.input-group.date').datepicker({
+            todayBtn: "linked",
+			autoclose: true,
+			todayHighlight: true,
+			toggleActive: true
+			});
+		</script>
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. Slimscroll is required when using the
+         fixed layout. -->
+  
+
+
+
+
+
+
+
+</body></html>

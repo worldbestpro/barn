@@ -1,0 +1,175 @@
+.hide-online {
+  display: none !important;
+}
+
+
+.online-status {
+  z-index: 5000;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  padding: .2rem 1rem;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+
+  span.on {
+    display: inline;
+  }
+
+  span.off {
+    display: none;
+  }
+
+}
+
+
+body.offline {
+
+  .online-status {
+    background-color: red !important;
+  }
+
+  span.on {
+    display: none;
+  }
+
+  span.off {
+    display: inline;
+  }
+
+  .hide-online {
+    display: block !important;
+  }
+
+}
+
+
+.login-window {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+}
+
+.help-block.error, .val-error, small.error {
+  color: #dd4b39;
+}
+
+small.warnings {
+  color: #f39c12;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.datepicker {
+  z-index: 1151 !important;
+  cursor: pointer;
+}
+
+.image-remove-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media (max-width: @screen-xs-max) {
+    right: 15px;
+  }
+}
+
+.row-paddings-compensation {
+  padding: 0 10px;
+
+  @media (max-width: @screen-xs-max) {
+    padding: 0;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.icheck-group {
+  //padding-top: 5px;
+}
+.icheck-label {
+  position: relative;
+  top: 1px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.box-header.fa-plus::before, .box-header.fa-minus::before {
+  content: '';
+}
+
+.nobreak {
+  white-space: nowrap;
+}
+
+
+.buck-avatar-border {
+  border-color: #00a7d0 !important;
+}
+
+.doe-avatar-border {
+  border-color: #ca195a !important;
+}
+
+
+.info-box.active {
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,0.8);
+}
+
+
+.bg-gray-active img {
+  border-color: #fff !important;
+}
+
+.loader {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+#litter-weigh-modal .info-box-icon img {
+  max-width: 80%;
+  margin:10px auto;
+  border: 3px solid;
+}
+#litter-butcher-modal .table td img {
+  max-width: 40px;
+  border: 2px solid;
+}
+
+.kit-butchered-icon {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 24px;
+  color: #dd4b39;
+}
+
+.kit-breeder-icon {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  font-size: 24px;
+  color: #00a65a;
+}
+
+.butched {
+  opacity: .5;
+}
+
+
+.box-statistics {
+  position: absolute;
+  left: 200px;
+  top: 6px;
+  line-height: 1.4;
+}
